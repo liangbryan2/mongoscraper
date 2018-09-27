@@ -6,7 +6,7 @@ The website can be found here:
 
 [Scraper](https://programmerhumorscraper.herokuapp.com/)
 
-![index](/public/index.jpg)
+![index](https://raw.githubusercontent.com/liangbryan2/mongoscraper/master/public/index.JPG)
 ### Scraping
 You can click the red button on the top of the page to scrape the subreddit and it'll return the currently displayed posts on the first page of the subreddit.
 
