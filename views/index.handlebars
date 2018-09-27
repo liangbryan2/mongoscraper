@@ -1,0 +1,27 @@
+<button id="scrape" class="uk-heading-hero">Scrape /r/ProgrammerHumor</button>
+{{!-- <button id="scrape">Scrape</button> --}}
+{{#each post}}
+<div class="container">
+
+    <div class="post slide">
+        <h2>{{this.title}}</h2>
+        <img class="img" src="{{this.image}}">
+        <a class="link" href="{{this.link}}">Reddit Post</a>
+    </div>
+    <div class="note">
+        <form class="form" id="{{this._id}}">
+            <fieldset class="uk-fieldset">
+                <legend class="uk-legend">Note</legend>
+                <div class="uk-margin">
+                    <input class="uk-input" type="text" placeholder="Title" value="{{this.note.title}}">
+                </div>
+                <div class="uk-margin">
+                    <textarea class="uk-textarea" rows="5" placeholder="Body">{{this.note.body}}</textarea>
+                </div>
+            </fieldset>
+            <button type="submit"><span uk-icon="icon: pencil; ratio: 2"></span></button>
+        </form>
+    </div>
+
+</div>
+{{/each}}

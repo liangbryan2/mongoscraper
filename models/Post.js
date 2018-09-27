@@ -2,9 +2,11 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 var PostSchema = new Schema({
     title: {
+        unique: true,
         type: String
     },
     link: {
+        unique: true,
         type: String,
         validate: [
             function (input) {

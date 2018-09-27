@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+body {
+    text-align: center;
+}
+.h2 {
+    font-family: 'Anton', sans-serif;
+    
+}
+
+.note {
+    width: auto;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.form {
+    display: none;
+}
+
+.post {
+    margin: 50px;
+    max-width: 50vh;
+    height: auto;
+}
+img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+.current {
+    transform: translateX(0%);
+}
+
+.moved-left {
+    transform: translateX(-10%);
+}
+
+.slide {
+    transition: transform 1s;
+}
+
+button[type=submit] {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+#scrape:hover {
+    cursor: pointer;
+}
