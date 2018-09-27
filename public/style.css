@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
 }
+
 body {
     text-align: center;
 }
-.h2 {
-    font-family: 'Anton', sans-serif;
-    
+
+.link {
+    display: block;
 }
 
 .note {
@@ -25,6 +26,7 @@ body {
     max-width: 50vh;
     height: auto;
 }
+
 img {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -46,7 +48,11 @@ p {
     transition: transform 1s;
 }
 
-button[type=submit] {
+#scrape {
+    font-size: 30px;
+}
+
+button.green {
     background-color: Transparent;
     background-repeat: no-repeat;
     border: none;
@@ -57,4 +63,57 @@ button[type=submit] {
 
 #scrape:hover {
     cursor: pointer;
+}
+
+button.green {
+    background: rgb(194, 0, 0);
+    color: #fff;
+    border: none;
+    position: relative;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+button.green:hover {
+    background: #fff;
+    color: rgba(199, 0, 0, 0.527);
+}
+
+button.green:before,
+button.green:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: rgba(175, 0, 0, 0.699);
+    transition: 400ms ease all;
+}
+
+button.green:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+button.green:hover:before,
+button.green:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+body {
+    background-image: url("./background3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.outline {
+    color: #fff;
+    text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
 }
