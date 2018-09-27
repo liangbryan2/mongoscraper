@@ -29,6 +29,7 @@ mongoose.connect(MONGODB_URI, {
 app.get("/", function (req, res) {
   db.Post.find({})
     .populate("note")
+    .sort({"_id": -1})
     .then(function (dbPost) {
       var obj = {
         post: dbPost

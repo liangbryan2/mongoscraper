@@ -114,6 +114,6 @@ body {
 
 .outline {
     color: #fff;
-    text-shadow: #000 0px 0px 1px;
+    text-shadow: #000 0px 0px 5px;
     -webkit-font-smoothing: antialiased;
 }
